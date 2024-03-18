@@ -5,6 +5,7 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
+		<link href="./_app/immutable/assets/_page-d7a52baa.css" rel="stylesheet">
 		<link rel="modulepreload" href="./_app/immutable/start-0253c409.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index-f0878874.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-0de40d7c.js">
@@ -15,11 +16,7 @@
 		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-3baee7e6.js">
 		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.js-9cbb603b.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/chat/_page.svelte-1d31f57f.js"><!-- HEAD_svelte-gynwln_START --><style>nav {
-      margin-left: 10%;
-      margin-right: 10%;
-    }
-  </style><!-- HEAD_svelte-gynwln_END -->
+		<link rel="modulepreload" href="./_app/immutable/components/pages/todo/_page.svelte-419d39f6.js">
 	</head>
 	<body>
 		<div style="display: contents">
@@ -34,24 +31,32 @@
 
 <hr>
 
+<div class="container svelte-p1r3ks"><h1>TODO LIST</h1>
+    <h2>Uppgifter <input type="text"><button type="submit">Lägg till</button></h2>
+
+    <div class="layout svelte-p1r3ks"><div style="display:grid"><h1>NEW</h1>
+
+        <ol><li>sak</li>
+            <li>sak2</li></ol></div>
+
+        <div style="display:grid"><h1>COMPLETED</h1>
+
+        <ol><li>sak</li>
+            <li>Ett annat list objekt</li></ol></div></div>
+
+    </div>
 
 
-<div class="container"><h1>TODO: Complete assignment</h1>
-  <div class="scrollable">
-    <article><span>Is something troubling you ?</span></article></div>
-  <form method="post"><input type="text" name="text"></form></div>
-
-
-		<script type="module" data-sveltekit-hydrate="1px6489">
+		<script type="module" data-sveltekit-hydrate="1b9ufq">
 			import { start } from "./_app/immutable/start-0253c409.js";
 
 			start({
 				env: {},
 				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="1px6489"]').parentNode,
+				target: document.querySelector('[data-sveltekit-hydrate="1b9ufq"]').parentNode,
 				version: "1710759600569",
 				hydrate: {
-					node_ids: [0, 8],
+					node_ids: [0, 17],
 					data: [null,null],
 					form: null
 				}
