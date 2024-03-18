@@ -5,7 +5,7 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/_page-bf38b191.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_page-d7a52baa.css" rel="stylesheet">
 		<link rel="modulepreload" href="./_app/immutable/start-28bd2d5b.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index-f0878874.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-0de40d7c.js">
@@ -16,7 +16,7 @@
 		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-3baee7e6.js">
 		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.js-9cbb603b.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/register/_page.svelte-a1b93d9e.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/todo/_page.svelte-419d39f6.js">
 	</head>
 	<body>
 		<div style="display: contents">
@@ -31,42 +31,32 @@
 
 <hr>
 
-<h1>Registration Form</h1>
+<div class="container svelte-p1r3ks"><h1>TODO LIST</h1>
+    <h2>Uppgifter <input type="text"><button type="submit">Lägg till</button></h2>
+
+    <div class="layout svelte-p1r3ks"><div style="display:grid"><h1>NEW</h1>
+
+        <ol><li>sak</li>
+            <li>sak2</li></ol></div>
+
+        <div style="display:grid"><h1>COMPLETED</h1>
+
+        <ol><li>sak</li>
+            <li>Ett annat list objekt</li></ol></div></div>
+
+    </div>
 
 
-
-
-
-
-
-<form class="svelte-11efje4"><label>First Name:</label>
-    <input id="firstname" type="text">
-    <label>Last Name:</label>
-    <input id="last name" type="text">
-    <label>Username:</label>
-    <input id="username" type="text">
-    <label>Email:</label>
-    <input id="email" type="text">
-    <label>Password:</label>
-    <input id="password" type="text">
-
-    <button type="submit">Register</button>
-
-    <p>Have an account? <a href="/login">Log in</a></p>
-
-</form>
-
-
-		<script type="module" data-sveltekit-hydrate="g6xho6">
+		<script type="module" data-sveltekit-hydrate="1b9ufq">
 			import { start } from "./_app/immutable/start-28bd2d5b.js";
 
 			start({
 				env: {},
 				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="g6xho6"]').parentNode,
+				target: document.querySelector('[data-sveltekit-hydrate="1b9ufq"]').parentNode,
 				version: "1710759676454",
 				hydrate: {
-					node_ids: [0, 12],
+					node_ids: [0, 17],
 					data: [null,null],
 					form: null
 				}
