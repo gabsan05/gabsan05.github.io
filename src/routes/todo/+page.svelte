@@ -1,7 +1,38 @@
+<script>
+   let tasks = [];
+   let completedTasks = [];
+   let newTask = '';
+
+    
+
+    function addTask() {
+        if (newTask.trim() !== '') {
+            tasks = [...tasks, newTask];
+            newTask = ''; 
+        }
+    }
+
+    function completeTask(id) {
+        const taskIndex = tasks.findIndex(task => task.id === id);
+        if (taskIndex !== -1) {
+            completedTasks = [...completedTasks, tasks[taskIndex]];
+            tasks.splice(taskIndex, 1);
+        }
+    }
+
+    function removeCompletedTask(id) {
+        completedTasks = completedTasks.filter(task => task.id !== id);
+    }
+
+</script>
+
 <div class="container">
 
     <h1>TODO LIST</h1>
-    <h2>Uppgifter <input type="text"><button type="submit">Lägg till</button></h2>
+    <h2>Uppgifter </h2>
+    <input type="text" bind:value={newTask} placeholder="Enter a new task">
+    <button on:click={addTask}>Add Task</button>
+        
 
     <div class="layout">
 
@@ -9,8 +40,9 @@
         <h1>NEW</h1>
 
         <ol>
-            <li>sak</li>
-            <li>sak2</li>
+            {#each tasks as task}
+            <li>{task}<button on:click={() => completeTask(task.id)}>Completed</button></li>
+        {/each} 
         </ol>
 
         </div>
@@ -19,12 +51,12 @@
         <h1>COMPLETED</h1>
 
         <ol>
-            <li>sak</li>
-            <li>Ett annat list objekt</li>
+            {#each completedTasks as task (task.id)}
+            <li>{task} <button on:click={() => removeCompletedTask(task.id)}>Remove</button></li>
+        {/each}
         </ol>
 
         </div>
-
     </div>
 
     </div>

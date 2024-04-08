@@ -34,6 +34,8 @@
 </script>
 
 <main>
+  <div class="red-box"></div>
+  <div class="blue-box"></div>
   <div class="row">
     {#each cards as card, i}
       <div
@@ -114,4 +116,16 @@
     -webkit-backface-visibility: hidden;
     position: absolute;
   }
+  .red-box, blue-box {
+width: 100px;
+height: 100px;
+position: absolute;
+bottom : 0;
+}
+.red-box {
+background-color: red;
+}
+.blue-box {
+background-color: blue;
+}
 </style>
