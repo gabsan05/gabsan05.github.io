@@ -19,6 +19,8 @@
 
 
 <svelte:head>
+  <link rel="stylesheet" href="/pico.min.css" />
+
   <style>
     nav {
       margin-left: 10%;
@@ -32,9 +34,12 @@
   <div class="scrollable">
     <!-- TODO: loop over the messages and display them -->
     <article>
+      {#each chat as message}
       <span>
-        {chat[0].text}
+        {message.text}
       </span>
+      {/each}
+
     </article>
   </div>
   <form

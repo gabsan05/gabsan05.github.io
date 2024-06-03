@@ -29,7 +29,7 @@
 
     <p>Have an account? <a
 
-        href="/login">Log in</a></p>
+        href="/Log in">Log in</a></p>
 
 </form>
 
